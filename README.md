@@ -1,53 +1,75 @@
-## Plasma Login
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# plasma-login-manager
 
-Plasma Login provides a display manager for KDE Plasma, forked from [SDDM](https://github.com/sddm/sddm) and with an new frontend providing a greeter, wallpaper plugin integration and System Settings module (KCM).
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/plasma-login-manager)
 
-### What we want
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
- - Great out-of-box experience in multi-monitor and high DPI and HDR
- - Keyboard layout switching
- - Virtual keyboards
- - Easy Chinese/Japanese/Korean/Vietnamese (CJK) input
- - Screen readers for blind people (which then means volume control)
- - Remote (VNC/RDP) support from startup
- - Deeper Plasma integration including:
-    - Display and keyboard brightness control
-    - Full power management
-    - Pairing trusted bluetooth devices
-    - Login to known Wi-Fi for remote LDAP
+## Architecture
 
-### Getting started
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-To try Plasma Login, you can build both repositories and install them on your system.
+## Install
 
-> [!caution]
-> It is not recommended to install this on your system — you should use a virtual machine instead. Installing this on real hardware will leave behind files not trivially uninstallable and could leave your system in a non-functional state.
-
-You will need to:
-
-- On Arch Linux, install `base-devel`, `git`, `cmake` and `extra-cmake-modules`
-- Clone, build and install:
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
 ```bash
-git clone https://invent.kde.org/plasma/plasma-login-manager.git
-cmake -S plasma-login-manager -B plasma-login-manager/build && sudo make install -C plasma-login-manager/build
+git clone https://github.com/Interested-Deving-1896/plasma-login-manager.git
+cd plasma-login-manager
 ```
 
-- Trigger the system user to be created:
+## Usage
 
-```bash
-sudo systemd-sysusers
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/plasma-login-manager`](https://github.com/Interested-Deving-1896/plasma-login-manager) and mirrored through:
+
+```
+Interested-Deving-1896/plasma-login-manager  ──►  OpenOS-Project-OSP/plasma-login-manager  ──►  OpenOS-Project-Ecosystem-OOC/plasma-login-manager
 ```
 
-- Disable SDDM and enable Plasma Login:
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-```bash
-sudo systemctl disable sddm
-sudo systemctl enable plasmalogin
-```
+## Contributors
 
-- …and finally reboot.
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-### Configuration
+## Origins
 
-Plasma Login is configured by users through `/etc/plasmalogin.conf`, which overrides distro-provided defaults at `/usr/lib/plasmalogin/defaults.conf`. In managed scenarios, the latter file can be modified to set a default wallpaper or login session, with the settings module disabled via Kiosk.
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-2.0](https://github.com/Interested-Deving-1896/plasma-login-manager/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
